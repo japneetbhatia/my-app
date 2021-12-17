@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Navbar.css";
 import { Link } from "react-router-dom"
 
 function Navbar() {
-    const [active, setActive] = useState('About')
+    const [active, setActive] = useState('');
+
+    useEffect(() => {
+        let currentURL = window.location.href
+        console.log(currentURL);
+        if (currentURL.endsWith('/home'))
+            setActive('About');
+        else if (currentURL.endsWith('/projects'))
+            setActive('Projects')
+        else if (currentURL.endsWith('/resume'))
+            setActive('Resume')
+
+    }, [active])
+
     return (
         <div className="navbar">
             <div className="navbar__active">
@@ -12,7 +25,7 @@ function Navbar() {
             </div>
 
             <div className="navbar__items">
-                <Link to="/">
+                <Link to="/home">
                     {active !== 'About' &&
                         <div className="navbar__item" onClick={() => setActive('About')}>About</div>
                     }
@@ -22,7 +35,7 @@ function Navbar() {
                         : null
                     }
                 </Link>
-                <Link to="/project">
+                <Link to="/projects">
                     {active !== 'Projects' && <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>}
                 </Link>
             </div>
