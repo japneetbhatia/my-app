@@ -9,11 +9,11 @@ function Navbar() {
         let currentURL = window.location.href
         console.log(currentURL);
         if (currentURL.endsWith('/home'))
-            setActive('About');
-        else if (currentURL.endsWith('/projects'))
-            setActive('Projects')
+            setActive('Skills');
+        // else if (currentURL.endsWith('/projects'))
+        //     setActive('Projects')
         else if (currentURL.endsWith('/resume'))
-            setActive('Resume')
+            setActive('Activities')
 
     }, [active])
 
@@ -26,18 +26,18 @@ function Navbar() {
 
             <div className="navbar__items">
                 <Link to="/home">
-                    {active !== 'About' &&
-                        <div className="navbar__item" onClick={() => setActive('About')}>About</div>
+                    {active !== 'Skills' &&
+                        <div className="navbar__item" onClick={() => setActive('Skills')}>Skills</div>
                     }
                 </Link>
                 <Link to="/resume">
-                    {active !== 'Resume' ? <div className="navbar__item" onClick={() => setActive('Resume')}>Resume</div>
+                    {active !== 'Activities' ? <div className="navbar__item" onClick={() => setActive('Activities')}>Activities</div>
                         : null
                     }
                 </Link>
-                <Link to="/projects">
+                {/* <Link to="/projects">
                     {active !== 'Projects' && <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>}
-                </Link>
+                </Link> */}
             </div>
 
         </div>

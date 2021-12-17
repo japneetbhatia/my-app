@@ -1,6 +1,5 @@
 import React from 'react'
 import "./About.css"
-
 import Skillcard from './Skillcard'
 
 function About() {
