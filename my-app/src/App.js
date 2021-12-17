@@ -1,10 +1,12 @@
 import './App.css';
 import Sidebar from './Components/Sidebar';
-import Navbar from "./Components/Navbar"
+import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <Router>
+      <div className="App">
       <div className="container">
         <div className="sidebar">
           <Sidebar />
@@ -14,7 +16,8 @@ function App() {
           <Navbar />
         </div>
       </div>
-    </div>
+      </div>
+    </Router>
   );
 }
 

@@ -19,7 +19,7 @@ function Sidebar() {
     return (
         <div className='sidebar-container'>
             <div className='icon'>
-            <img src={coder} alt="image" className='face-icon' />
+                <img src={coder} alt="" className='face-icon' />
             </div>
             <div className='name-bar'>
                 Japneet Kaur Bhatia
