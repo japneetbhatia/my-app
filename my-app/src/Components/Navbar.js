@@ -10,8 +10,6 @@ function Navbar() {
         console.log(currentURL);
         if (currentURL.endsWith('/home'))
             setActive('Skills');
-        // else if (currentURL.endsWith('/projects'))
-        //     setActive('Projects')
         else if (currentURL.endsWith('/resume'))
             setActive('Activities')
 
@@ -35,9 +33,6 @@ function Navbar() {
                         : null
                     }
                 </Link>
-                {/* <Link to="/projects">
-                    {active !== 'Projects' && <div className="navbar__item" onClick={() => setActive('Projects')}>Projects</div>}
-                </Link> */}
             </div>
 
         </div>

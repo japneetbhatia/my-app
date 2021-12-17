@@ -6,9 +6,7 @@
 .about-intro {
     height: 10%;
     margin: 34px;
-    /* margin-left: 20px; */
     font-style: italic;
-    /* font-weight: bold; */
     font-size: 18px;
     color: rgb(78, 65, 65);
 }
@@ -35,11 +33,9 @@
 .left-skills {
     height: 100%;
     width: 50%;
-    /* background-color: cadetblue; */
 }
 
 .right-skills {
     height: 100%;
     width: 50%;
-    /* background-color: rgb(144, 197, 21); */
 }

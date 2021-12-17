@@ -19,19 +19,9 @@ function App() {
           <Navbar />
             <Routes>
               <Route exact path="/home" element={<About/>} />
-                {/* <About />
-              </Route> */}
               <Route exact path="/resume" element={<Resume/>} />
-                {/* <Resume />
-              </Route> */}
               <Route exact path="/projects" element={<Project/>} />
-                {/* <Project />
-              </Route> */}
-              {/* <Route>
-                <Navigate to="/home" />
-              </Route> */}
-            </Routes>
-            
+            </Routes>            
         </div>
       </div>
       </div>

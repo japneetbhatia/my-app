@@ -1,8 +1,5 @@
 import React from 'react'
 import "./Resume.css"
-
-// import Skillcard from './Skillcard'
-
 function Resume() {
     return (
         <div className="resume">

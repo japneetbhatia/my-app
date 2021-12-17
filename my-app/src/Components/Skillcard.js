@@ -3,14 +3,12 @@ import "./Skillcard.css"
 
 const Skillcard = ({title,bgcolor,progress,height}) => {
      
-    const Parentdiv = {
+      const Parentdiv = {
         height: height,
         width: '100%',
         backgroundColor: '#D48E49',
         borderRadius: 20,
         marginTop: 10
-        // marginBottom: 40
-        // margin: 50
       }
       
       const Childdiv = {
