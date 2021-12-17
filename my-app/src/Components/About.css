@@ -1,0 +1,45 @@
+.about {
+    height: 100%;
+    width: 100%;
+}
+
+.about-intro {
+    height: 10%;
+    margin: 34px;
+    /* margin-left: 20px; */
+    font-style: italic;
+    /* font-weight: bold; */
+    font-size: 18px;
+    color: rgb(78, 65, 65);
+}
+
+.skill-container {
+    height: 50%;
+    margin-top: 0;
+}
+
+.skill-heading {
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(17, 17, 17);
+}
+
+.skills {
+    height: 120%;
+    width: 100%;
+    display: flex;
+}
+
+.left-skills {
+    height: 100%;
+    width: 50%;
+    /* background-color: cadetblue; */
+}
+
+.right-skills {
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(144, 197, 21); */
+}

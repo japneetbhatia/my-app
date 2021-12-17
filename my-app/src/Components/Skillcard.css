@@ -1,0 +1,13 @@
+.skill-box {
+    height: 15%;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* border-bottom: 1px solid rgb(220, 202, 241); */
+    margin-top: 20px;
+}
+
+.skill-title {
+    font-size: 18px;
+}

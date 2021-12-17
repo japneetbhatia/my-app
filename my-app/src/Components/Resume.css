@@ -1,0 +1,23 @@
+.resume {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.skills {
+    height: 120%;
+    width: 100%;
+    display: flex;
+}
+
+.left-skills {
+    height: 100%;
+    width: 50%;
+    /* background-color: cadetblue; */
+}
+
+.right-skills {
+    height: 100%;
+    width: 50%;
+    /* background-color: rgb(144, 197, 21); */
+}

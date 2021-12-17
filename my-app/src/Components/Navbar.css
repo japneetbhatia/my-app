@@ -11,7 +11,7 @@
 
 .navbar__active {
     margin-left: 20px;
-    margin-top: 7px;
+    margin-top: 17px;
     font-size: 29px;
     font-weight: 700;
     color: #354358;
@@ -21,6 +21,7 @@
 
 .navbar__item {
     margin-right: 20px;
+    margin-top: 17px;
     text-decoration: none;
     color: #354358;
     font-size: 1.3rem;
@@ -31,6 +32,7 @@
 .navbar__item:hover {
     background: -webkit-linear-gradient(#00F260, #0575E6);
     background-clip: text;
+    /* font-size: 25px; */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent
 }
