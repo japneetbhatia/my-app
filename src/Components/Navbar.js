@@ -8,7 +8,7 @@ function Navbar() {
     useEffect(() => {
         let currentURL = window.location.href
         console.log(currentURL);
-        if (currentURL.endsWith('/home'))
+        if (currentURL.endsWith('/'))
             setActive('Skills');
         else if (currentURL.endsWith('/resume'))
             setActive('Activities')
@@ -23,7 +23,7 @@ function Navbar() {
             </div>
 
             <div className="navbar__items">
-                <Link to="/home">
+                <Link to="/">
                     {active !== 'Skills' &&
                         <div className="navbar__item" onClick={() => setActive('Skills')}>Skills</div>
                     }
