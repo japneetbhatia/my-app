@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from './Components/About';
 import Resume from './Components/Resume';
-import Project from './Components/Project';
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
             <Routes>
               <Route exact path="/home" element={<About/>} />
               <Route exact path="/resume" element={<Resume/>} />
-              <Route exact path="/projects" element={<Project/>} />
             </Routes>            
         </div>
       </div>
